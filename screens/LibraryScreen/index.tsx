@@ -4,7 +4,7 @@ import styles from './styles';
 
 const LibraryScreen = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <Text>LibraryScreen</Text>
     </View>
   );

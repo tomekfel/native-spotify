@@ -4,7 +4,7 @@ import styles from './styles';
 
 const SearchScreen = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <Text>SearchScreen</Text>
     </View>
   );

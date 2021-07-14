@@ -17,7 +17,7 @@ export default {
               HomeScreen: 'home',
             },
           },
-          Library: {
+          'Your Library': {
             screens: {
               LibraryScreen: 'library',
             },

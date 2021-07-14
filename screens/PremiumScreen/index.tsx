@@ -4,7 +4,7 @@ import styles from './styles';
 
 const PremiumScreen = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <Text>PremiumScreen</Text>
     </View>
   );

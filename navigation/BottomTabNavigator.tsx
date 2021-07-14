@@ -3,7 +3,13 @@
  * https://reactnavigation.org/docs/bottom-tab-navigator
  */
 
-import { Ionicons } from '@expo/vector-icons';
+import {
+  Ionicons,
+  Entypo,
+  EvilIcons,
+  MaterialCommunityIcons,
+  FontAwesome5,
+} from '@expo/vector-icons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import * as React from 'react';
@@ -40,25 +46,12 @@ export default function BottomTabNavigator() {
         component={HomeNavigator}
         options={{
           tabBarIcon: ({ color }) => (
-            <TabBarIcon name='ios-code' color={color} />
-          ),
-        }}
-      />
-      <BottomTab.Screen
-        name='Library'
-        component={LibraryNavigator}
-        options={{
-          tabBarIcon: ({ color }) => (
-            <TabBarIcon name='ios-code' color={color} />
-          ),
-        }}
-      />
-      <BottomTab.Screen
-        name='Premium'
-        component={PremiumNavigator}
-        options={{
-          tabBarIcon: ({ color }) => (
-            <TabBarIcon name='ios-code' color={color} />
+            <Entypo
+              size={30}
+              style={{ marginBottom: -3 }}
+              name='home'
+              color={color}
+            />
           ),
         }}
       />
@@ -67,7 +60,40 @@ export default function BottomTabNavigator() {
         component={SearchNavigator}
         options={{
           tabBarIcon: ({ color }) => (
-            <TabBarIcon name='ios-code' color={color} />
+            <EvilIcons
+              size={30}
+              style={{ marginBottom: -3 }}
+              name='search'
+              color={color}
+            />
+          ),
+        }}
+      />
+      <BottomTab.Screen
+        name='Your Library'
+        component={LibraryNavigator}
+        options={{
+          tabBarIcon: ({ color }) => (
+            <Ionicons
+              size={30}
+              style={{ marginBottom: -3 }}
+              name='library-outline'
+              color={color}
+            />
+          ),
+        }}
+      />
+      <BottomTab.Screen
+        name='Premium'
+        component={PremiumNavigator}
+        options={{
+          tabBarIcon: ({ color }) => (
+            <FontAwesome5
+              size={30}
+              style={{ marginBottom: -3 }}
+              name='spotify'
+              color={color}
+            />
           ),
         }}
       />
@@ -94,7 +120,7 @@ function HomeNavigator() {
       <HomeStack.Screen
         name='HomeScreen'
         component={HomeScreen}
-        options={{ headerTitle: 'Home Title' }}
+        options={{ headerTitle: 'Home Title', headerShown: true }}
       />
     </HomeStack.Navigator>
   );
