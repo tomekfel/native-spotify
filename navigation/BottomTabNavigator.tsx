@@ -22,6 +22,9 @@ import HomeScreen from '../screens/HomeScreen';
 import LibraryScreen from '../screens/LibraryScreen';
 import PremiumScreen from '../screens/PremiumScreen';
 import SearchScreen from '../screens/SearchScreen';
+import AlbumScreen from '../screens/AlbumScreen';
+import SongScreen from '../screens/SongScreen';
+import PlayerScreen from '../screens/PlayerScreen';
 
 import {
   BottomTabParamList,
@@ -120,7 +123,25 @@ function HomeNavigator() {
       <HomeStack.Screen
         name='HomeScreen'
         component={HomeScreen}
-        options={{ headerTitle: 'Home Title', headerShown: true }}
+        options={{ headerTitle: 'Home', headerShown: true }}
+      />
+
+      <HomeStack.Screen
+        name='AlbumScreen'
+        component={AlbumScreen}
+        options={{ headerTitle: 'Album', headerShown: true }}
+      />
+
+      <HomeStack.Screen
+        name='SongScreen'
+        component={SongScreen}
+        options={{ headerTitle: 'Song', headerShown: true }}
+      />
+
+      <HomeStack.Screen
+        name='PlayerScreen'
+        component={PlayerScreen}
+        options={{ headerTitle: 'Player', headerShown: true }}
       />
     </HomeStack.Navigator>
   );
@@ -134,7 +155,7 @@ function LibraryNavigator() {
       <LibraryStack.Screen
         name='LibraryScreen'
         component={LibraryScreen}
-        options={{ headerTitle: 'Library Title' }}
+        options={{ headerTitle: 'Library' }}
       />
     </LibraryStack.Navigator>
   );
@@ -148,7 +169,7 @@ function PremiumNavigator() {
       <PremiumStack.Screen
         name='PremiumScreen'
         component={PremiumScreen}
-        options={{ headerTitle: 'Premium Title' }}
+        options={{ headerTitle: 'Premium' }}
       />
     </PremiumStack.Navigator>
   );
@@ -162,7 +183,7 @@ function SearchNavigator() {
       <SearchStack.Screen
         name='SearchScreen'
         component={SearchScreen}
-        options={{ headerTitle: 'Search Title' }}
+        options={{ headerTitle: 'Search' }}
       />
     </SearchStack.Navigator>
   );

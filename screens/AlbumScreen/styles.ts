@@ -1,20 +1,14 @@
 import { StyleSheet } from 'react-native';
-
 const styles = StyleSheet.create({
   container: {
-    width: 150,
-    margin: 10,
-  },
-  image: {
-    width: '100%',
-    height: 150,
-  },
-  artist: {
-    color: 'grey',
-    textTransform: 'uppercase',
+    flex: 1,
+    alignItems: 'center',
   },
   title: {
+    margin: 10,
     color: 'white',
+    fontSize: 30,
+    fontWeight: '700',
   },
 });
 

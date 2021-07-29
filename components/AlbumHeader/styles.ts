@@ -1,21 +1,22 @@
 import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   container: {
-    // margin: 0,
-  },
-  titleBar: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
     alignItems: 'center',
+    marginVertical: 20,
   },
   title: {
-    marginLeft: 10,
     color: 'white',
-    fontSize: 30,
+    fontSize: 25,
     fontWeight: '700',
   },
-  button: {
-    width: 100,
+  image: {
+    width: 150,
+    height: 150,
+  },
+  creator: {
+    color: 'grey',
+    fontSize: 13,
+    margin: 10,
   },
 });
 

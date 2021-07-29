@@ -1,20 +1,27 @@
 import { StyleSheet } from 'react-native';
-
 const styles = StyleSheet.create({
   container: {
-    width: 150,
+    flexDirection: 'row',
     margin: 10,
   },
+  details: {
+    justifyContent: 'center',
+    marginLeft: 10,
+    flexDirection: 'column',
+    // flexShrink: 1,
+    width: '70%',
+  },
   image: {
-    width: '100%',
-    height: 150,
+    width: 75,
+    height: 75,
   },
   artist: {
     color: 'grey',
-    textTransform: 'uppercase',
+    fontSize: 16,
   },
   title: {
     color: 'white',
+    fontSize: 19,
   },
 });
 

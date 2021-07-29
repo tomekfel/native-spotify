@@ -17,6 +17,9 @@ export type BottomTabParamList = {
 
 export type HomeParamList = {
   HomeScreen: undefined;
+  AlbumScreen: undefined;
+  SongScreen: undefined;
+  PlayerScreen: undefined;
 };
 
 export type LibraryParamList = {
@@ -34,4 +37,5 @@ export type Album = {
   imageUri: string;
   artist: string;
   title: string;
+  track_yt_link: string;
 };
