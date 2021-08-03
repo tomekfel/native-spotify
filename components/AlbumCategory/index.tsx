@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, FlatList, Button } from 'react-native';
+import { View, Text, FlatList, Button, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import AlbumComponent from '../Album';
 import styles from './styles';
@@ -42,9 +42,11 @@ const AlbumCategory = (props: AlbumCategoryProps) => {
         {/* Title */}
         <Text style={styles.title}>{data?.title}</Text>
         {data && (
-          <View style={styles.button}>
-            <Button title='Play All' onPress={onPress}></Button>
-          </View>
+          <TouchableOpacity onPress={onPress}>
+            <View style={styles.button}>
+              <Text style={styles.buttonText}>Play All</Text>
+            </View>
+          </TouchableOpacity>
         )}
       </View>
       {/* List of albums */}

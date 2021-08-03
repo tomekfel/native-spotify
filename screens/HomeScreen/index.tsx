@@ -1,6 +1,5 @@
 import React from 'react';
 import { View, FlatList } from 'react-native';
-import axios from 'axios';
 import styles from './styles';
 import albumCategories from '../../data/albumCategories';
 import AlbumCategory from '../../components/AlbumCategory';

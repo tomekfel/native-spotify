@@ -3,6 +3,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
+    paddingBottom: 80,
   },
   title: {
     margin: 10,

@@ -41,7 +41,7 @@ const PlayerScreen = () => {
 
   return (
     <View style={styles.container}>
-      <View>
+      <View style={styles.playerContainer}>
         <YoutubePlayer
           height={300}
           play={playing}
@@ -49,7 +49,7 @@ const PlayerScreen = () => {
           onChangeState={onStateChange}
           videoId={'YKzgFf9JZkY'}
         />
-        <Button title={playing ? 'pause' : 'play'} onPress={togglePlaying} />
+        {/* <Button title={playing ? 'pause' : 'play'} onPress={togglePlaying} /> */}
       </View>
     </View>
   );

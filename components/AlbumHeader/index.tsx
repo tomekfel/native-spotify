@@ -20,7 +20,13 @@ const AlbumHeader = (props: AlbumHeaderProps) => {
       <Image style={styles.image} source={{ uri: album[0].imageUri }} />
       <Text style={styles.title}>{title}</Text>
       <Text style={styles.creator}>BY SPOTIFY - 38.4K LIKES</Text>
-      <Button title='Play All' onPress={onPress}></Button>
+
+      {/* Play Button */}
+      <TouchableOpacity onPress={onPress}>
+        <View style={styles.button}>
+          <Text style={styles.buttonText}>PLAY</Text>
+        </View>
+      </TouchableOpacity>
     </View>
   );
 };

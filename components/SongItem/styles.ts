@@ -1,8 +1,10 @@
 import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   container: {
-    // alignItems: 'center',
+    alignItems: 'center',
     margin: 10,
+    // width: '100%',
+    paddingBottom: 80,
   },
   title: {
     color: 'white',
@@ -20,12 +22,25 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     marginBottom: 20,
   },
+  buttonContainer: {
+    alignItems: 'center',
+  },
   button: {
-    margin: 20,
+    backgroundColor: '#1CD05D',
+    width: 175,
+    height: 60,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 50,
+  },
+  buttonText: {
+    color: 'white',
+    fontSize: 20,
+    fontWeight: 'bold',
   },
   details: {
     justifyContent: 'flex-end',
-    marginTop: 70,
+    marginTop: 10,
   },
 });
 
