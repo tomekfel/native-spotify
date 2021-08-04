@@ -42,6 +42,9 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
     marginTop: 10,
   },
+  disabled: {
+    opacity: 0.5,
+  },
 });
 
 export default styles;

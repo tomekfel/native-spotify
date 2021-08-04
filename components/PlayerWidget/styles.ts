@@ -1,12 +1,15 @@
 import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   container: {
-    flexDirection: 'row',
     position: 'absolute',
     bottom: 48,
-    alignItems: 'center',
+    // alignItems: 'center',
+    // justifyContent: 'center',
     backgroundColor: 'black',
     width: '100%',
+  },
+  row: {
+    flexDirection: 'row',
   },
   bottomContainer: {
     flexDirection: 'row',
@@ -39,7 +42,13 @@ const styles = StyleSheet.create({
   playerContainer: {
     height: 75,
     width: 75,
-    justifyContent: 'center',
+    // backgroundColor: 'blue',
+    // justifyContent: 'center',
+    paddingTop: 17,
+  },
+  progressBar: {
+    height: 2,
+    backgroundColor: 'blue',
   },
 });
 

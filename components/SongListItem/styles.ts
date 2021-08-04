@@ -24,6 +24,9 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 19,
   },
+  disabled: {
+    opacity: 0.5,
+  },
 });
 
 export default styles;
